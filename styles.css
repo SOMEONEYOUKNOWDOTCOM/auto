@@ -1,24 +1,35 @@
-  <style>
-        body {
-            background-color: teal;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+/* styles.css */
 
-        .header-container {
-            text-align: center;
-        }
+body {
+  background-color: teal;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-        #JOTCHAT {
-            font-size: 3rem;
-            margin: 0;
-        }
+.header-container {
+  text-align: center;
+}
 
-        .j-letter { color: red; }
-        .o-letter { color: white; }
-        .t-letter { color: blue; }
-        .chat-letters { color: green; }
-    </style>
+#JOTCHAT {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.j-letter {
+  color: red;
+}
+
+.o-letter {
+  color: white;
+}
+
+.t-letter {
+  color: blue;
+}
+
+.chat-letters {
+  color: green;
+}
