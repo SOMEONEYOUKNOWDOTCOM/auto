@@ -1,15 +1,13 @@
-/* styles.css */
-
 body {
   background-color: teal;
   margin: 0;
-  padding-top: 50px;           /* 🔼 push content down from the top */
+  padding-top: 50px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;     /* ⬆️ content stays at top */
+  align-items: flex-start;
   min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
-
 
 .header-container {
   text-align: center;
@@ -34,4 +32,41 @@ body {
 
 .chat-letters {
   color: green;
+}
+
+.login-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.login-container input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 140px;
+}
+
+.login-container button {
+  padding: 6px 14px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #006666;
 }
