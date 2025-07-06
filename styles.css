@@ -3,11 +3,13 @@
 body {
   background-color: teal;
   margin: 0;
+  padding-top: 50px;       /* 🔼 Pushes content down slightly from the top */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* ⬆️ Aligns content to the top, not center */
   min-height: 100vh;
 }
+
 
 .header-container {
   text-align: center;
