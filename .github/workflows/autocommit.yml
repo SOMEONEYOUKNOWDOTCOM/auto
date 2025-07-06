@@ -1,14 +1,14 @@
 name: Auto Commit
 
 on:
-  schedule:
-    - cron: '* * * * *'  # Runs every 1 minute
-  workflow_dispatch:        # Also allows manual trigger
+  push:
+    paths:
+      - '**/*'
+  workflow_dispatch:  # allows manual trigger too
 
 jobs:
   commit:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -17,10 +17,10 @@ jobs:
 
       - name: Set up Git config
         run: |
-          git config --global user.email "your-email@example.com"
+          git config --global user.email "bot@example.com"
           git config --global user.name "Auto Commit Bot"
 
-      - name: Make changes (optional)
+      - name: Make changes
         run: |
           echo "// Auto commit at $(date)" >> auto-commit-log.txt
 
