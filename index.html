@@ -5,11 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JOTCHAT</title>
 
-  <!-- Only keep the stylesheet you're actually using -->
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- If you're styling directly in HTML, do it inside <head> -->
-
 </head>
 <body>
   <div class="header-container">
@@ -20,11 +17,14 @@
       <span class="chat-letters">CHAT</span>
     </h1>
   </div>
-<div class="login-container">
-  <input type="text" id="jafar" placeholder="User Name" />
-  <input type="password" id="oli" placeholder="Password" />
-  <button>Login</button>
-</div>
 
+  <div class="login-container">
+    <input type="text" id="jafar" placeholder="User Name" />
+    <input type="password" id="oli" placeholder="Password" />
+    <button onclick="handleLogin()">Login</button>
+  </div>
+
+  <!-- Link to your JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
