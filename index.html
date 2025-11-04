@@ -27,14 +27,22 @@
   </div>
 <iframe src="https://iframe.chat/embed?chat=71103454" id="chattable"></iframe>
   <!-- Link to your JavaScript file -->
-  <script>
-    chattable.initialize({
-        theme: "moderno" // set the value to the name of the theme
-    });
+<script>
+  window.addEventListener("load", () => {
+    if (window.chattable) {
+      chattable.initialize({
+        theme: "moderno"
+      });
+    } else {
+      console.error("chattable script not loaded yet.");
+    }
+  });
 </script>
+
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
