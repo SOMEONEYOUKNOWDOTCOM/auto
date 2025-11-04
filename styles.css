@@ -17,7 +17,11 @@ body {
   font-size: 3rem;
   margin: 0;
 }
-
+#bro {
+  display: none;
+  font-weight: bold;
+  text-align: center;
+}
 .j-letter {
   color: red;
 }
