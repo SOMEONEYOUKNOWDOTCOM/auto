@@ -1,6 +1,6 @@
 function handleLogin() {
   const username = document.getElementById('jafar').value;
-   const name = username.lowerClass();
+  const name = username.toLowerCase();
   const password = document.getElementById('oli').value;
 
   // Example: Log values or validate
