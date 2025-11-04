@@ -3,11 +3,14 @@ function handleLogin() {
   const username = usernameInput.toLowerCase();
   const password = document.getElementById('oli').value;
   const message = document.getElementById('bro');
-  // Example: Log values or validate
+
   if (username === "admin" && password === "1234") {
-    alert("Login successful!");
+    message.textContent = "Login successful!";
     message.style.display = "block";
+    message.style.color = "limegreen";
   } else {
-    alert("Invalid username or password.");
+    message.textContent = "Invalid username or password.";
+    message.style.display = "block";
+    message.style.color = "red";
   }
 }
